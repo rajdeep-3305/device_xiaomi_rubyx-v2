@@ -234,12 +234,6 @@ ro.board.platform=mt6877
 ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6877
 
-# Power
-vendor.powerhal.interaction.max=650
-vendor.powerhal.interaction.min=30
-vendor.powerhal.interaction.offset=0
-
-
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
