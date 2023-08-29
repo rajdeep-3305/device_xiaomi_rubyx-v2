@@ -50,8 +50,8 @@ on init
     write /dev/sys/fs/by-name/userdata/gc_urgent_sleep_time 500
 
     # VM
-    write /proc/sys/vm/dirty_expire_centisecs 3000
-    write /proc/sys/vm/dirty_background_ratio 10
+    write /proc/sys/vm/dirty_expire_centisecs 200
+    write /proc/sys/vm/dirty_background_ratio 5
 
 on enable-low-power
     # Enable UFS Powersaving
