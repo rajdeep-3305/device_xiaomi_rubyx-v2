@@ -294,6 +294,14 @@ telephony.lteOnCdmaDevice=1
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
+# SurfaceFlinger durations
+debug.sf.high_fps_early_gl_phase_offset_ns=-12666667
+debug.sf.high_fps_early_phase_offset_ns=-12666667
+debug.sf.high_fps_late_app_phase_offset_ns=-5000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-12666667
+ro.surface_flinger.vsync_event_phase_offset_ns=8400000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=-10933333
+
 # Trusted Execution Environment (TEE)
 ro.hardware.wechat=beanpod
 ro.vendor.mtk_microtrust_tee_support=1
