@@ -297,6 +297,9 @@ debug.hwui.target_cpu_time_percent=30
 debug.hwui.use_hint_manager=true
 debug.hwui.use_buffer_age=true
 
+# RenderEngine
+debug.renderengine.blur_algorithm=kawase2
+
 # Update engine
 ro.virtual_ab.compression.threads=true
 ro.virtual_ab.cow_op_merge_size=16
