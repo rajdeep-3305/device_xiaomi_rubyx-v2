@@ -1,6 +1,6 @@
 # Audio
-aaudio.mmap_exclusive_policy=0
-aaudio.mmap_policy=0
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
 audio.offload.min.duration.secs=10
 audio.offload.video=true
 persist.vendor.audio.power.save.setting=253
