@@ -859,6 +859,7 @@ on property:sys.boot_completed=1
     write /sys/kernel/mm/swap/vma_ra_enabled false
     swapon_all /vendor/etc/fstab.mt6877
 
+    write /sys/kernel/rcu_expedited 0
     restart android-hardware-media-c2-hal-1-2
     chmod 440 /proc/net/unix
 
