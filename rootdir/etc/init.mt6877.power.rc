@@ -79,10 +79,6 @@ on enable-low-power
     write /sys/block/dm-4/queue/read_ahead_kb 128
     write /sys/block/dm-5/queue/read_ahead_kb 128
 
-    # sched
-    write /proc/sys/kernel/sched_migration_cost_ns 200000
-    write /proc/sys/kernel/sched_util_clamp_max 1024
-
     # Reclaim tuning
     write /proc/sys/vm/watermark_scale_factor 10
     write /proc/sys/vm/vfs_cache_pressure 100
@@ -100,8 +96,9 @@ on enable-low-power
 
     # Utilization Clamping
     # Tuning
+    write /proc/sys/kernel/sched_migration_cost_ns 200000
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
-    write /proc/sys/kernel/sched_util_clamp_min 0
+    write /proc/sys/kernel/sched_util_clamp_min 1024
 
     # rt
     write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1
