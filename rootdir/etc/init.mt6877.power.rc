@@ -89,7 +89,8 @@ on enable-low-power
 
     # GED tuning
     write /sys/kernel/ged/hal/dvfs_margin_value 130
-    write /sys/kernel/ged/hal/timer_base_dvfs_margin 50
+    write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
+    write /sys/kernel/ged/hal/loading_base_dvfs_step 4
     write /sys/kernel/ged/hal/custom_upbound_gpu_freq 0
     write /sys/kernel/ged/hal/custom_boost_gpu_freq 0
     write /sys/module/ged/parameters/gpu_cust_boost_freq 0
