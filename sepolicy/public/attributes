@@ -7,3 +7,4 @@ attribute hal_mlipay;
 attribute hal_mtdservice_client;
 attribute hal_mtdservice_server;
 attribute hal_mtdservice;
+type platform_app_36;
