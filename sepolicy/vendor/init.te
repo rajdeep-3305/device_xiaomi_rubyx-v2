@@ -1,3 +1,5 @@
+allow init proc_swappiness:file rw_file_perms;
+
 # Allow init to ptrace the fingerprint HAL
 allow init hal_fingerprint_default:process ptrace;
 
