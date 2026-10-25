@@ -8,6 +8,8 @@ genfscon dmabuf / u:object_r:vendor_dmabuf:s0
 # Fingerprint
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/authen_fd                    u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/authen_fd/performance        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/fingerprint/wakeup_enable                                         u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/fingerprint/wakeup/                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fingerprint                                                       u:object_r:vendor_sysfs_fingerprint:s0
 
 # Extcon
