@@ -111,10 +111,3 @@ on boot
     chown root system /sys/devices/platform/11270000.ufshci/ufscld/trigger_interval
     chmod 664 /sys/devices/platform/11270000.ufshci/ufscld/trigger
 
-on property:persist.vendor.radio.msimmode=ss
-   setprop ro.telephony.sim.count 1
-   setprop telephony.active_modems.max_count 1
-
-on property:persist.vendor.radio.msimmode=dsds
-   setprop ro.telephony.sim.count 2
-   setprop telephony.active_modems.max_count 2
