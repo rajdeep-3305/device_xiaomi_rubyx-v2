@@ -22,7 +22,6 @@ vendor.audiohal.telephonytx.type=2
 # Battery Saving
 persist.vendor.log.tel_log_ctrl=0
 ro.vendor.mtk_log_hide_gps=1
-ro.config.hw_power_saving=true
 persist.vendor.mtk.aee.filter=0
 persist.vendor.mtk.aee.mode=4
 ro.vendor.aee.enforcing=no
@@ -72,20 +71,6 @@ vendor.connsys.driver.ready=no
 
 # ConsumerIr
 ro.hardware.consumerir=common
-
-# Dex2oat
-dalvik.vm.dex2oat-cpu-set=0,1,2,3
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
-dalvik.vm.image-dex2oat-threads=4
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.dexopt.secondary=true
-persist.bg.dexopt.enable=true
-pm.dexopt.install=speed-profile
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=verify
 
 # Display
 debug.mediatek.appgamepq_compress=1
@@ -218,9 +203,6 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
-# Perf
-ro.max.fling_velocity=10000
-
 # Platform
 ro.board.platform=mt6877
 ro.soc.manufacturer=Mediatek
@@ -237,7 +219,6 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
-wifi.supplicant_scan_interval=120
 
 # Radio
 import /vendor/etc/rsc/${ro.boot.hwc}/ro.prop
