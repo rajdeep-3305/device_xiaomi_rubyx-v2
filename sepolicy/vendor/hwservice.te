@@ -2,3 +2,6 @@
 type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
 
 type vendor_mediatek_hardware_camera_postproc_hwservice, hwservice_manager_type;
+
+# Dolby
+type hal_dvs_hwservice, hwservice_manager_type;
