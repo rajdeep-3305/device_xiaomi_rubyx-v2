@@ -1,3 +1,6 @@
 get_prop({ appdomain -isolated_app_all }, vendor_fingerprint_prop)
 get_prop({ appdomain -isolated_app_all }, vendor_mlipay_prop)
 get_prop(platform_app_36, vendor_camera_prop)
+
+# Camera Post Process
+allow { platform_app platform_app_36 } hal_campostproc_hwservice:hwservice_manager find;

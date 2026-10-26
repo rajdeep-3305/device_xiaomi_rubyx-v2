@@ -4,5 +4,7 @@ get_prop(hal_camera_default, vendor_default_prop)
 # Post process
 add_hwservice(hal_camera_default, vendor_mediatek_hardware_camera_postproc_hwservice)
 allow hal_camera_default vendor_mediatek_hardware_camera_postproc_hwservice:hwservice_manager find;
+add_hwservice(hal_camera_default, hal_campostproc_hwservice)
+allow hal_camera_default hal_campostproc_hwservice:hwservice_manager find;
 
 allow hal_camera_default self:capability sys_nice;
