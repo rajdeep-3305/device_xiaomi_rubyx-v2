@@ -915,11 +915,3 @@ on boot
     write /proc/sys/vm/vfs_cache_pressure 100
     write /proc/sys/vm/min_free_kbytes 16384
     write /proc/sys/vm/lowmem_reserve_ratio "256 256 32"
-
-    # Scheduler
-    write /sys/block/sda/queue/scheduler mq-deadline
-    write /sys/block/sdb/queue/scheduler mq-deadline
-    write /sys/block/sdc/queue/scheduler mq-deadline
-    write /sys/block/sdd/queue/scheduler mq-deadline
-    write /sys/block/sde/queue/scheduler mq-deadline
-    write /sys/block/sdf/queue/scheduler mq-deadline
