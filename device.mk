@@ -423,7 +423,7 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set_bool,mediatek_wifi_hal,use_pre_u_qpr2_struct,true)
 
 # Inherit the proprietary files
-$(call inherit-product-if-exists, device/xiaomi/miuicamera-rubyx/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/hyperoscamera-rubyx/device.mk)
 $(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
 
 # Axion Stuff

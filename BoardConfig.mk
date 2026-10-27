@@ -213,5 +213,5 @@ WIFI_FEATURE_SUPPLICANT_11AX := true
 BOARD_COMPILER_OPTIMIZATION := speed
 
 # Inherit the proprietary files
--include device/xiaomi/miuicamera-rubyx/BoardConfig.mk
+-include device/xiaomi/hyperoscamera-rubyx/BoardConfig.mk
 include vendor/xiaomi/rubyx/BoardConfigVendor.mk
