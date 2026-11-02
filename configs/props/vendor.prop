@@ -178,6 +178,7 @@ ro.lmk.kill_timeout_ms=50
 ro.lmk.filecache_min_kb=153600
 ro.lmk.swap_free_low_percentage=20
 ro.lmk.stall_limit_critical=40
+ro.lmk.swap_compression_ratio=2
 
 # Media
 debug.mediatek.disp_decompress=1
