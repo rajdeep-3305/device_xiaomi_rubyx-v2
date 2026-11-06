@@ -30,6 +30,9 @@ namespace_imports = [
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    'libsink': lambda lib, partition: f'{lib}-vt' if partition == 'system_ext' else lib,
+    'vendor.mediatek.hardware.videotelephony@1.0':
+        lambda lib, partition: f'{lib}-vendor' if partition == 'vendor' else lib,
 }
 
 blob_fixups: blob_fixups_user_type = {
@@ -122,6 +125,16 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/lib64/libmialgoengine.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils_mtk.so'),
+
+    'system_ext/lib64/libmtk_vt_service.so': blob_fixup()
+        .add_needed('libshim_vtservice.so'),
+
+    'system_ext/lib64/libsource.so': blob_fixup()
+        .add_needed('libshim_vtservice.so')
+        .add_needed('libui_shim.so'),
+
+    'system_ext/lib64/libsink.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so'),
 
     # Skip RefBase's CallStack dump and continue at the destructor cleanup.
     'vendor/lib64/libutils_mtk.so': blob_fixup()

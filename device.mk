@@ -176,7 +176,11 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 PRODUCT_PACKAGES += \
-    libshim_vtservice
+    libion
+
+PRODUCT_PACKAGES += \
+    libshim_vtservice \
+    libui_shim
 
 # Init
 PRODUCT_PACKAGES += \
