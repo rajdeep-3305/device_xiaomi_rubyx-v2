@@ -175,6 +175,9 @@ PRODUCT_PACKAGES += \
 # IMS
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
+PRODUCT_PACKAGES += \
+    libshim_vtservice
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6877 \
