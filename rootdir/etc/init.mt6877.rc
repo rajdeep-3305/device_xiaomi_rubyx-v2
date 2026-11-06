@@ -643,6 +643,9 @@ on post-fs-data
     chmod 0664 sys/kernel/debug/ext_dev_io/MT6362.0-09/size
 
 on boot
+    setprop persist.vendor.vilte_support 1
+    setprop persist.vendor.viwifi_support 1
+
     chmod 0660 /sys/power/autosleep
 
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
