@@ -44,9 +44,11 @@ vendor/lib/libvow_ap_test_dd.so
 vendor/lib/libvow_ap_test_ha.so
 vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
+vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/libmisight.so
 vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
+vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio Configs
 vendor/etc/audio_param_m16/AW_DSP.bin
