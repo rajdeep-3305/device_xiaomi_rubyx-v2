@@ -28,8 +28,10 @@ ro.vendor.aee.enforcing=no
 
 # Bluetooth
 bluetooth.hardware.power.operating_voltage_mv=3300
+persist.bluetooth.a2dp_offload.disabled=true
 ro.vendor.bt.platform=6877
 ro.vendor.mtk.bt_sap_enable=false
+vendor.bluetooth.ldac.abr=true
 
 # Camera
 camera.disable_zsl_mode=1
