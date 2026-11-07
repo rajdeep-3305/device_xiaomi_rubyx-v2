@@ -58,6 +58,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32
 
 PRODUCT_PACKAGES += \
+    audio.usb.default:32
+
+PRODUCT_PACKAGES += \
     libdynproc:32 \
     libhapticgenerator:32
 
