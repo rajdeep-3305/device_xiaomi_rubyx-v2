@@ -73,6 +73,20 @@
             <kctl name="aw_dev_0_prof" value="Music" />
             <kctl name="aw_dev_1_prof" value="Music" />
         </path>
+        <path name="speaker_output_top" value="turnon">
+            <kctl name="aw_dev_0_switch" value="Enable" />
+            <kctl name="aw_dev_1_switch" value="Disable" />
+        </path>
+        <path name="speaker_output_top" value="turnoff">
+            <kctl name="aw_dev_0_switch" value="Disable" />
+        </path>
+        <path name="speaker_output_bottom" value="turnon">
+            <kctl name="aw_dev_0_switch" value="Disable" />
+            <kctl name="aw_dev_1_switch" value="Enable" />
+        </path>
+        <path name="speaker_output_bottom" value="turnoff">
+            <kctl name="aw_dev_1_switch" value="Disable" />
+        </path>
        <!-- 2-in-1 speaker output-->
         <path name="two_in_one_speaker_output" value="turnon">
         </path>
