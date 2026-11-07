@@ -144,6 +144,10 @@ ro.vendor.smvr.p2batch.vga=16
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
 
+# Dolby
+ro.vendor.audio.dolby.vision.support=true
+ro.vendor.display.dolbyvision.support=true
+
 # DRM
 ro.netflix.bsp_rev=MTK6877-33678-1
 
